@@ -7,6 +7,7 @@ function GM:PlayerIntialSpawn( ply )
   ply:SetGravity( 1 )
   ply:SetWalkSpeed( 225 )
   ply:SetRunSpeed( 350 )
+  ply:SetTeam( 1 )
 end
 
 function GM:PlayerSpawn(ply)
