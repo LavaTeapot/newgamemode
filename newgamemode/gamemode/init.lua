@@ -14,4 +14,20 @@ function GM:PlayerSpawn(ply)
 	ply:Give('weapon_pistol')
 	elseif ply:Team() == 2 Then
 	ply:Give('weapon_AR2')
+	end
+end
+//
+local RDM = math.random( 1, 2 )
+	if RDM == 1 then
+	ply:SetTeam( 1 )
+	elseif RDM == 2 then
+	ply:SetTeam( 2 )
+end
+TEAM1 = team.NumPlayers( 1 )
+TEAM2 = team.NumPlayers( 2 )
+	if TEAM1 > TEAM2 then
+		ply:SetTeam( 2 )
+	elseif TEAM2 > TEAM1 then
+		ply:SetTeam( 1 )
+	end
 end
