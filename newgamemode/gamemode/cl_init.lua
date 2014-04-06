@@ -20,3 +20,4 @@ function DermaTest()
         chat.AddText( Color(0, 120, 150), "Hi", Color(255, 255, 255), "My name is kitten" )
       end
 end
+usermessage.Hook( "Openpls", DermaTest )
