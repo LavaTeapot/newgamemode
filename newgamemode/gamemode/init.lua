@@ -32,3 +32,8 @@ TEAM2 = team.NumPlayers( 2 )
 		ply:SetTeam( 1 )
 	end
 end
+
+function GM:ShowTeam( ply )
+	umsg.Start( "Openpls", ply )
+	umsg.End()
+end
