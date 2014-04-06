@@ -7,5 +7,4 @@ function GM:PlayerIntialSpawn( ply )
   ply:SetGravity( 1 )
   ply:SetWalkSpeed( 225 )
   ply:SetRunSpeed( 350 )
-  ply:Give("weapon_crowbar")
 end
