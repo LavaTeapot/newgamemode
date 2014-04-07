@@ -21,7 +21,6 @@ function switchteam()
     button.DoClick = function()
         chat.AddText( Color(0, 120, 150), "[CONSOLE] ", Color(255, 255, 255), "Your team has been switched." )
       end
-    usermessage.Hook( "switchteam1", switchteam )
     button1:SetParent( base )
     button1:SetText( "Swap to team 2" )
     button1:SetColor( Color( 0, 100, 200 ) )
@@ -30,6 +29,5 @@ function switchteam()
     button1.DoClick = function()
         chat.AddText( Color(0, 120, 150), "[CONSOLE] ", Color(255, 255, 255), "Your team has been switched." )
       end
-    usermessage.Hook( "switchteam2", switchteam )
 end
-
+usermessage.Hook( "switchteam", switchteam )
