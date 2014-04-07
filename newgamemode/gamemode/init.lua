@@ -33,8 +33,7 @@ TEAM2 = team.NumPlayers( 2 )
 	end
 end
 
-function GM:ShowTeam( ply )
-	umsg.Start( "switchteam", ply )
+function GM:ShowSpare2(ply)
+	umsg.Start( 'SwitchTeam', ply)
 	umsg.End()
 end
-
