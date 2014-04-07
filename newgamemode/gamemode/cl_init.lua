@@ -17,6 +17,11 @@ function switchteam()
       butt:SetSize(150, 50)
       
       butt.DoClick = function()
+          if ply:Team() == 1 Then
+              ply:SetTeam(2)
+            else
+              ply:SetTeam(1)
+          end
           chat.AddText( Color(0, 120, 150), "[CONSOLE] ", Color(255, 255, 255), "Your team has been switched." )
       end
 end
